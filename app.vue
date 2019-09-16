@@ -15,8 +15,7 @@
                   this.third === false;
                   this.fourth === false;
                   this.ref === false;
-                }
-              },
+                },
               select2: function(){
                   this.home = false
                   this.second = true
@@ -24,4 +23,5 @@
                   this.fourth = false
                   this.ref = false
                 }
+              }
             })
