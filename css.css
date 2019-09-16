@@ -1,0 +1,161 @@
+body {
+            
+    margin:0;
+    background-color: #373331;
+    
+}
+
+.fade-enter-active, .fade-leave-active{
+  transition: all .5s;
+}
+.fade-enter, .fade-leave-to{
+  transform: scale(0);
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  position:fixed;
+  margin: auto;
+}
+
+.icon-bar a {
+  float: left;
+  display: block;
+  width: 16.666666%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 27px;
+}
+
+.icon-bar a:hover {
+  background-color: rgb(43, 39, 39);
+}
+
+.active {
+  background-color: #80ac7b;
+}
+#abstract{
+  color:white;
+  background-color: #555;
+  width: 33%;
+  margin: 2%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px;
+  
+}
+#abstract1{
+  color:white;
+  background-color: #555;
+  width: auto;
+  margin: 15%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px;
+  align-content: center;
+}
+#title{
+  text-align: center;
+  padding-top: 5%;
+  color: #80ac7b;
+  
+}
+#pic{
+  width: 200px;
+  padding: 2%;
+  height: auto;
+  background-color: #80ac7b;
+  object-fit: contain; 
+  display: inline-block;
+  margin-right: 10%;
+}
+.content {
+  display: inline-block;
+  font-size: 16pt;
+  height: auto;
+  vertical-align: text-top;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+}
+.midline{
+  font-size: 16pt;
+  height: auto;
+  vertical-align: text-top;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 16%;
+  margin-right: 16%;
+}
+.left{
+  
+  float: left; 
+  width: 40%;
+  margin-left: 10%;
+  margin-bottom: 1px;
+  
+}
+.right{
+  
+  float:right;
+  width: 40%;
+  margin-right: 10%;
+  margin-bottom: 1px;
+  
+}
+#list{
+  width: 200px;
+  background-color: #80ac7b
+  
+
+}
+p{
+  margin-block-start: 0%;
+  margin-block-end: 0%;
+}
+ul{
+  list-style-type: none;
+  font-size: 20pt;
+
+}
+#table{
+  margin-left: 25%;
+  padding-left: 10px;
+  float: left;
+  width: 33%;
+  background-color: #80ac7b;
+  color: white;
+  height: max-content;
+}
+#picture{
+  margin-top: 25%;
+  margin-left: 20%;
+  margin-right: 50%;
+  padding-right: 50%:
+  
+}
+#coverpic{
+  margin-left: 25%;
+  margin-top: 20px;
+  width: 600px;
+  padding: 2%;
+  background-color: #80ac7b;
+}
+#lastpic{
+  margin-left: 30%;
+  width: 600px;
+  margin-top: 20px;
+  padding: 2%;
+  background-color: #80ac7b;
+}
+a{
+  color: #80ac7b;
+  font-size: 20pt;
+  text-align: center
+}

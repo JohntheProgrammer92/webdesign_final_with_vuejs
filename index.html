@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Cell Phones</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+  <link rel="stylesheet" type="text/css" href="css.css" />
+  <style scoped>
+  #app{
+    transition: all 2s ease-in-out;
+  }
+    </style>
+
+</head>
+
+<body>
+    
+  <div id="app" style="transition: all 0.5s ease0in0out;">
+    <div class="icon-bar" v-on:click="counter+=1">
+      <a>
+        <i v-on:click='home = true,
+         second = false,
+          third = false,
+         fourth = false,
+            ref = false'
+            ><img src="./img/home.svg" alt="Home" />
+        </i>
+      </a>
+
+      <a>
+        <i v-on:click='home = false,
+         second = true,
+          third = false,
+         fourth = false,
+            ref = false'
+            ><img src="./img/archive.svg" alt="camera" />
+        </i>
+      </a>
+      
+      <a>    
+          <i v-on:click='home = false,
+         second = false,
+          third = true,
+         fourth = false,
+            ref = false'
+            ><img src="./img/briefcase.svg" alt="calendar" />
+          </i>
+      </a>
+
+      <a>
+        <i v-on:click='home = false,
+        second = false,
+         third = false,
+        fourth = true,
+           ref = false'
+           ><img src="./img/phone.svg" alt="phone" />
+        </i>
+      </a>
+
+      <a>
+        <i v-on:click='home = false,
+        second = false,
+         third = false,
+        fourth = false,
+           ref = true'
+           ><img src="./img/server.svg" alt="server" /></i></a>
+      <a>{{counter}} menu clicks</a>
+
+
+
+
+    </div>
+    
+<!--Start Index==================================================================-->
+
+    <div v-if="home==true">
+      <div id="title">
+        <h1>Cause and effect of smartphones on society</h1>
+      </div>
+      
+      <div class="content">
+        <div id="abstract1">
+          <p>
+            Since 1992 the world has had a boom in mobile computing because of smartphones. Because these devices are so
+            portable and hugely powerful, they enhance our lives. Smartphones enhance the human condition by giving easy
+            access to the internet, allowing for greater organization, and helping us communicate easier.
+
+          </p>
+        </div>
+        <div id="coverpic" v-on:click='home = false,
+        second = false,
+         third = false,
+        fourth = false,
+           ref = true'>
+          <a>
+            <!--https://pixabay.com/illustrations/mobile-phone-mobile-phone-2198770/-->
+            <img src="./img/coverphone.png" alt="homepagepic" height="400px" width="auto">
+          </a>
+        </div>
+
+
+      </div>
+      
+    </div>
+
+<!--End Index====================================================================-->
+
+<!--Start Second Page============================================================-->
+
+    <div v-if='second==true'>
+      <div>
+      <div id="title">
+        <h2>Having near instant access to the internet helps people do things they may have not been able to do.</h2>
+      </div>
+      <div class="content">
+        <div id="abstract" class="left">
+          <p>
+            Having on the go internet access allows people to find new recipes and diet information anywhere, even in
+            the kitchen.
+            There are many resources online for recipes and guides for cooking. Having a full computer in the kitchen is
+            not practical. So, the portability of the smart phone also comes into play in this scenario.
+            The availability of health-related resources by trusted and knowledgeable providers means that waiting to
+            speak to a professional in person once a week or less, is not the only way to check up on information about
+            diet and food.
+          </p>
+        </div>
+        <!-- https://www.maxpixel.net/Net-App-Internet-News-Smartphone-Information-Web-1184883 -->
+        <div id="pic" class="right" v-on:click='home = false,
+        second = false,
+         third = false,
+        fourth = false,
+           ref = true'>
+          <a>
+            <img src="./img/cellphone.png" alt="pic1" width="200" height="auto">
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <br />
+    <div class="content">
+      <div id="list" class="left">
+        <ul>
+          <li>Apple</li>
+          <ul>
+            <li>iPhone</li>
+          </ul>
+          <li>Android</li>
+          <ul>
+            <li>Galaxy</li>
+            <li>Pixel</li>
+            <li>PlusOne</li>
+          </ul>
+        </ul>
+      </div>
+      <div id="abstract" class="right">
+        <p>
+          Being able to look up reference material for infrequently used skills enables users to stay up to date without
+          formal training.
+          For example, in the computer programming field, when a coding language is created it is completely documented
+          on the source website for use by all who are learning it.
+          Often in the case of vehicles there are lesser known facts that aren’t necessarily professional knowledge that
+          can be found online easily such: intended tire pressure, or oil type.
+        </p>
+      </div>
+
+    </div>
+    <br />
+    <div class="content">
+      <div id="abstract" class="left">
+        <p>
+          Also, being able to find out about world events as they happen can keep the user safe, as well as help them
+          avoid those situations
+          Having the internet at your finger tips brings the news to you in a flash. Now a user can hear about an event
+          as it happens and have enough details to react appropriately. Traffic information will literally save your job
+          if you can’t be late, as it gives you a chance to avoid slow downs if you utilize the service.
+
+        </p>
+      </div>
+    </div>
+    </div>
+
+<!--End Second ==================================================================-->
+
+<!--start Third Page=============================================================-->
+
+    <div v-if='third==true'>
+    <div id="title">
+      <h2>Smartphones help funnel the vast amount of information we are to process and act upon in a small, neat package.
+      </h2>
+    </div>
+    <div class="midline">
+      <div id="abstract" class="left">
+        <p>
+          With so many apps related to productivity available for smart phones it is easier to stay ahead.
+          There are apps for list making with remainders to help even the busiest person with staying ahead of their tasks.
+          Both iPhone and Android phones include AI assistants by default, which in turn offer more options for reminders
+          and quick processing of information.
+        </p>
+    
+        <br />
+        <br />
+        <br />
+    
+        <p>
+          Business related apps for email, meetings scheduling, and payroll, give a user in a cooperate environment
+          everything needed to manage their work life with minimal interference of their home life.
+          The current Outlook app offers meeting scheduling on the go through invitation emails, making accepting and
+          declining them easier.
+          Being able to reply to and forward emails out of the office, or anywhere, cuts back on turn around time for
+          important communication
+        </p>
+        <br />
+        <br />
+        <br />
+    
+        <p>
+          Interconnectivity between mobile apps and their PC-based counterparts provide seamless information processing by a
+          user no matter their setting
+          With the arrival of cloud storage apps on smartphones and computers, a user can edit a document in anyway they see
+          fit from nearly all mobile devices and computers.
+          This gives the smartphone an advantage in allowing the user to forgo carrying a laptop daily
+    
+        </p>
+      </div>
+      <div id="table">
+        <table>
+          <th>
+            <h4>Common Poductivity Feautres</h4>
+          </th>
+          <tr>
+            <td>Cloud Based calendar.</td>
+          </tr>
+          <tr>
+            <td>Reminders.</td>
+          </tr>
+          <tr>
+            <td>Email Sync.</td>
+          </tr>
+    
+    
+        </table>
+        <div id="picture" v-on:click='home = false,
+        second = false,
+         third = false,
+        fourth = false,
+           ref = true'>
+          <!--https://pixabay.com/vectors/android-operating-system-reboot-2995824/-->
+          <a>
+            <img src="./img/droid.png" alt="droid" height="400px" width="auto">
+          </a>
+        </div>
+      </div>
+    
+    </div>
+    </div>
+
+<!--End Third====================================================================-->
+
+<!--Start Fourth Page============================================================-->
+
+    <div v-if='fourth==true'>
+    <div id="title">
+      <h2>There is not a modern form of communication that is not achievable through a smart phone.</h2>
+    </div>
+    <div class="content">
+      <div id="abstract1">
+        <p>
+          With both phone calls and internet calling available, smart phones give flexibility in communication styles
+          There are too many apps to count that allow for voice over internet protocol (VOIP) calls
+          Even if a user doesn’t have access to a standalone phone network, if internet is available through a wifi
+          connection, calls can still be made.
+        </p>
+        <br />
+        <p>
+          Text-based messaging is easier than ever on a modern smart phone.
+          With full keyboards and autocorrect, typing an email or les formal text message is easy and fast.
+          Voice dictation has also improved tremendously with AI assistants on smart phone
+        </p>
+        <br />
+        <p>
+          Some smartphones also offer scheduled texts and automatic replies.
+          Being able to schedule a text message will assist those who need to be precise in communicating at certain times.
+          Having automatic replies enabled outside of the office allows users to focus on the reason they are not in the
+          office that day.
+        </p>
+      </div>
+    </div>
+    <div id="lastpic" v-on:click='home = false,
+    second = false,
+     third = false,
+    fourth = false,
+       ref = true'>
+      <a>
+        <!-- https://pixabay.com/photos/woman-people-coffee-portrait-3083379/ -->
+        <img src="./img/lastpic.png" alt="lastpic" height="400px" width="auto">
+      </a>
+    </div>
+    </div>
+
+<!--End Fourth===================================================================-->
+
+<!--Start Ref Page===============================================================-->
+
+    <div v-if='ref==true'>
+      <div id="title">
+        <h1>References</h1>
+      </div>
+      <br />
+      <div id="title">
+        <h2>picture references</h2>
+      </div>
+      <br />
+      <div id="first"><a href="https://pixabay.com/illustrations/mobile-phone-mobile-phone-2198770/">
+          <p>https://pixabay.com/illustrations/mobile-phone-mobile-phone-2198770/</p>
+        </a></div>
+      <br />
+      <br />
+      <br />
+      <div id="second"><a href="https://www.maxpixel.net/Net-App-Internet-News-Smartphone-Information-Web-1184883">
+          <p>https://www.maxpixel.net/Net-App-Internet-News-Smartphone-Information-Web-1184883</p>
+        </a></div>
+      <br />
+      <br />
+      <br />
+      <div id="third"><a href="https://pixabay.com/vectors/android-operating-system-reboot-2995824/">
+          <p>https://pixabay.com/vectors/android-operating-system-reboot-2995824/</p>
+        </a></div>
+      <br />
+      <br />
+      <br />
+      <div id="fourth"><a href="https://pixabay.com/photos/woman-people-coffee-portrait-3083379/">
+          <p>https://pixabay.com/photos/woman-people-coffee-portrait-3083379/</p>
+        </a></div>
+      <br />
+      <div id="title">
+        <h2>Informational reference</h2>
+      </div>
+      <br />
+      <div id="site"><a href="https://www.textrequest.com/blog/history-evolution-smartphone/">
+          <p>https://www.textrequest.com/blog/history-evolution-smartphone/</p>
+        </a></div>
+    </div>
+
+  </div>
+
+
+</body>
+<script src="app.vue"> </script>
+
+</html>
